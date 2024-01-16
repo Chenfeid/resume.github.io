@@ -1,4 +1,5 @@
 /* Basic Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -54,7 +55,7 @@ p {
 
 /* Sections */
 section {
-    background: rgb(116, 145, 149);
+    background: rgb(0, 202, 229);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px; /* Rounded corners */
@@ -74,30 +75,179 @@ footer {
     color: rgb(255, 255, 255);
 }
 /* Specific Section Styles */
-#Summary, #experience, #edu$tr {
-    background-color: white; /* White background for specific sections */
+#Summary {
+    background-color: #8e3737; 
+    background: linear-gradient(to right, #67a7c3, #7798b0); /* Gradient from left to right */
+}
+#Summary p {
+    font-style: italic; /* Italicize the paragraph for distinction */
+    color: #11193a; /* Lighter color for less emphasis */
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+#Summary h2 {
+    text-align: center;
+    color: #000000; /* A modern blue color for headings */
+    margin-bottom: 20px;
+}
+#Skills {
+    background-color: #a2d1d9; 
+    background: linear-gradient(to right, #5bafc2, #7f97a8); /* Gradient from left to right */
+}
+#Skills ul {
+    list-style-type: arial; /* Or choose 'circle', 'square', etc. */
+    margin-left: 10px; /* Proper indentation for list */
+    margin-top: 5px;
+}
+#Skills li {
+    font-style: normal;
+    color: #144145;
+    margin-bottom: 10px; /* Space between list items */
+    line-height: 1.5; /* Increase line spacing for readability */
+}
+
+#experience {
+    background-color: #adbabd; 
+    background: linear-gradient(to right, #7ec1d0, #7c9cb0); /* Gradient from left to right */
+}
+
+/* Experience Section Styling */
+#experience {
+    background-color: white; /* Background color for the experience section */
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-/* Styles for h2 elements inside specific sections */
-#Summary h2, #experience h2, #edu$tr h2 {
+#experience h2 {
     text-align: center;
-    color: #2193b0;
+    color: #000000; /* A modern blue color for headings */
+    margin-bottom: 20px;
 }
 
-/* Responsive Design */
+#experience article {
+    border-left: 4px solid #69b5ca8e; /* Adds a left border line for style */
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+#experience h3 {
+    color: #333; /* Dark color for sub-headings */
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#experience p {
+    font-style: italic; /* Italicize the paragraph for distinction */
+    color: #666; /* Lighter color for less emphasis */
+    margin-bottom: 5px;
+}
+
+#experience ul {
+    list-style-type: disc; /* Or choose 'circle', 'square', etc. */
+    margin-left: 20px; /* Proper indentation for list */
+    margin-top: 5px;
+}
+
+#experience li {
+    margin-bottom: 5px; /* Space between list items */
+    line-height: 1.5; /* Increase line spacing for readability */
+}
+
+/* Additional responsive adjustments if needed */
 @media (max-width: 768px) {
-    body {
+    #experience {
         padding: 10px;
-    }
-    header {
-        padding: 10px 0;
+        margin-bottom: 10px;
     }
 }
 
+#edu_tr {
+    background-color: #8399a1; 
+    background: linear-gradient(to right, #7fcfe0, #8da1ad); /* Gradient from left to right */
+}
+/* Education and Training Section Styling */
+#edu_tr {
+    background-color: white; /* Background color for the education section */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
 
-/* Additional styles for buttons, forms, etc. */
+#edu_tr h2 {
+    text-align: center;
+    color: #000000; /* A modern blue color for headings */
+    margin-bottom: 20px;
+}
+
+#edu_tr article {
+    border-left: 4px solid #69b5ca8e; /* Adds a left border line for style */
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+#edu_tr h3 {
+    color: #333; /* Dark color for sub-headings */
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#edu_tr p {
+    font-style: italic; /* Italicize the paragraph for distinction */
+    color: #666; /* Lighter color for less emphasis */
+    margin-bottom: 5px;
+}
+
+#edu_tr ul {
+    list-style-type: disc; /* Or choose 'circle', 'square', etc. */
+    margin-left: 20px; /* Proper indentation for list */
+    margin-top: 5px;
+}
+
+#edu_tr li {
+    margin-bottom: 5px; /* Space between list items */
+    line-height: 1.5; /* Increase line spacing for readability */
+}
+
+/* Additional responsive adjustments if needed */
+@media (max-width: 768px) {
+    #edu_tr {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+#Certifications {
+    background-color: #9a9fa0; 
+    background: linear-gradient(to right, #76c2d5, #5882b5); /* Gradient from left to right */
+}
+#Certifications ul {
+    list-style-type: arial; /* Or choose 'circle', 'square', etc. */
+    margin-left: 10px; /* Proper indentation for list */
+    margin-top: 5px;
+}
+#Certifications li {
+    font-style: normal;
+    color: #144145;
+    margin-bottom: 10px; /* Space between list items */
+    line-height: 1.5; /* Increase line spacing for readability */
+}
+
+#Accomplishments {
+    background-color: #9a9fa0; 
+    background: linear-gradient(to right, #76c2d5, #5882b5); /* Gradient from left to right */
+}
+#Accomplishments ul {
+    list-style-type: arial; /* Or choose 'circle', 'square', etc. */
+    margin-left: 10px; /* Proper indentation for list */
+    margin-top: 5px;
+}
+#Accomplishments li {
+    font-style: normal;
+    color: #144145;
+    margin-bottom: 10px; /* Space between list items */
+    line-height: 1.5; /* Increase line spacing for readability */
+}
 
